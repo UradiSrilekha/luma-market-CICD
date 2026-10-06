@@ -1,0 +1,12 @@
+# Run the website locally:  docker compose up -d --build
+services:
+  web:
+    build: .
+    image: luma-market:local
+    container_name: luma-market
+    ports:
+      - "8081:3000"        # http://localhost:8081
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
