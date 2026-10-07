@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.gitignore
+.manus-logs
+Dockerfile
+docker-compose.yml
+Jenkinsfile
+jenkins
+*.md
+.env*
